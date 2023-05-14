@@ -12,7 +12,7 @@ body {
     background-position: 90%;
     background-size:cover;
     background-repeat: no-repeat;
-    min-width: 35vw;
+    min-width: 60vw;
     height: 100vh;
 }
 
@@ -28,8 +28,25 @@ main {
 }
 
 form {
-    height: 30vh;
     background-color: #fbfafa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: start;
+    padding: 0px 0px 25px 25px;
+    gap: 15px;
+}
+
+form > label {
+    padding-left: 25px;
+    width: 15rem;
+    float: left;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .upper-section {
@@ -48,15 +65,17 @@ header > h1 {
 }
 
 .lower-section {
-    margin: 35px 0px 50px 35px ;
+    padding: 25px 0 0 25px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
+    background-color: #e5dcd5;
 }
 
 .lower-section > button {
-    width: 15%;
-    height: 3.5vh;
+    width: 14rem;
+    height: 2.5rem;
     border-radius: 10px;
     background-color: #5c6c36;
     color: #fbfafa;
@@ -74,4 +93,8 @@ header > h1 {
     background-color: #e5dcd5;
     color: #5c6c36;
     font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
 }
